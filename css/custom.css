@@ -1,0 +1,25 @@
+.attention-row {
+	min-height:300px;
+	text-align: center;
+}
+
+.attention-row h3 {
+	font-size: 5em;
+	color: #fff;
+	text-shadow: 1px 2px 4px #000;
+}
+
+.attention-row p {
+	font-size: 1.8em;
+	color: #fff;
+	text-shadow: 1px 2px 4px #000;
+}
+.countdown-row,.details-row {
+	margin-top: 1.5em;
+}
+
+
+.countdown-row .clock {
+	width: 540px;
+	margin: 0 auto;
+}

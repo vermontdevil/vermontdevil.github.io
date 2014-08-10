@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2015 NAD Leadership Training Conference</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/flipclock.css">
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <div data-magellan-expedition="fixed">
+      <dl class="sub-nav">
+        <dd data-magellan-arrival="attention"><a href="#attention">2015 NLTC</a></dd>
+        <dd data-magellan-arrival="countdown"><a href="#countdown">Countdown</a></dd>
+        <dd data-magellan-arrival="details"><a href="#details">Details</a></dd>
+      </dl>
+    </div>
+
+    <div class="row attention-row" data-interchange="[nltc-sample-banner.jpg, (default)], [nltc-sample-banner.jpg, (large)]">
+      <a name="attention"></a>
+      <div class="large-12 columns">
+        <h3 data-magellan-destination="arrival">NLTC QUOTE</h3>
+        <p>September XX, 2015</p>
+        <p>Birmingham, Alabama</p>
+        
+      </div>
+    </div>
+  
+    
+    <div class="row countdown-row">
+      <a name="destination"></a>
+      <div>
+        <h3 data-magellan-destination="destination"></h3>
+        <div class="clock"></div>
+        <form style="margin-top: 1.5em;">
+          <div class="small-6 large-centered columns">
+            <div class="row collapse">
+              <div class="small-9 columns">
+                <input type="text" placeholder="email">
+              </div>
+              <div class="small-3 columns">
+                <span class="postfix radius">Remind Me</span>
+              </div>
+            </div>
+          </div>
+          
+        </form>
+      </div>     
+    </div>
+    
+    <div class="row details-row" data-equalizer>
+      <a name="details"></a>
+      <div class="medium-4 columns panel" data-equalizer-watch data-magellan-destination="details">
+        <h3>The People</h3>
+        <p>Image of people</p>
+      </div>
+      <div class="medium-4 columns panel" data-equalizer-watch>
+        <h3>The Location</h3>
+        <p>Image of location</p>
+      </div>
+      <div class="medium-4 columns panel" data-equalizer-watch>
+        <h3>The Event</h3>
+        <p>Image of event or something</p>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.magellan.js"></script>
+    <script src="js/foundation/foundation.equalizer.js"></script>
+    <script src="js/vendor/flipclock.min.js"></script>
+    <script>
+      $(document).foundation();
+      $(document).ready(function(){
+          // Grab the current date
+        var currentDate = new Date();
+
+        // Set some date in the past. In this case, it's always been since Jan 1
+        var pastDate  = new Date(currentDate.getFullYear(), 0, 1);
+
+        // Calculate the difference in seconds between the future and current date
+        var diff = currentDate.getTime() / 1000 - pastDate.getTime() / 1000;
+
+        // Instantiate a coutdown FlipClock
+        clock = $('.clock').FlipClock(diff, {
+          clockFace: 'DailyCounter',
+          showSeconds: false
+        });
+      });
+    </script>
+  </body>
+</html>
