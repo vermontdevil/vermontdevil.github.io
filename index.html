@@ -1,94 +1,159 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2015 NAD Leadership Training Conference</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/flipclock.css">
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body>
-    <div data-magellan-expedition="fixed">
-      <dl class="sub-nav">
-        <dd data-magellan-arrival="attention"><a href="#attention">2015 NLTC</a></dd>
-        <dd data-magellan-arrival="countdown"><a href="#countdown">Countdown</a></dd>
-        <dd data-magellan-arrival="details"><a href="#details">Details</a></dd>
-      </dl>
-    </div>
+<!DOCTYPE HTML>
 
-    <div class="row attention-row" data-interchange="[nltc-sample-banner.jpg, (default)], [nltc-sample-banner.jpg, (large)]">
-      <a name="attention"></a>
-      <div class="large-12 columns">
-        <h3 data-magellan-destination="arrival">NLTC QUOTE</h3>
-        <p>September XX, 2015</p>
-        <p>Birmingham, Alabama</p>
-        
-      </div>
-    </div>
-  
-    
-    <div class="row countdown-row">
-      <a name="destination"></a>
-      <div>
-        <h3 data-magellan-destination="destination"></h3>
-        <div class="clock"></div>
-        <form style="margin-top: 1.5em;">
-          <div class="small-6 large-centered columns">
-            <div class="row collapse">
-              <div class="small-9 columns">
-                <input type="text" placeholder="email">
-              </div>
-              <div class="small-3 columns">
-                <span class="postfix radius">Remind Me</span>
-              </div>
-            </div>
-          </div>
-          
-        </form>
-      </div>     
-    </div>
-    
-    <div class="row details-row" data-equalizer>
-      <a name="details"></a>
-      <div class="medium-4 columns panel" data-equalizer-watch data-magellan-destination="details">
-        <h3>The People</h3>
-        <p>Image of people</p>
-      </div>
-      <div class="medium-4 columns panel" data-equalizer-watch>
-        <h3>The Location</h3>
-        <p>Image of location</p>
-      </div>
-      <div class="medium-4 columns panel" data-equalizer-watch>
-        <h3>The Event</h3>
-        <p>Image of event or something</p>
-      </div>
-    </div>
+<html>
+	<head>
+		<title>2015 NLTC </title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+			<link rel="stylesheet" href="css/style-normal.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/foundation/foundation.magellan.js"></script>
-    <script src="js/foundation/foundation.equalizer.js"></script>
-    <script src="js/vendor/flipclock.min.js"></script>
-    <script>
-      $(document).foundation();
-      $(document).ready(function(){
-          // Grab the current date
-        var currentDate = new Date();
+		<!-- Header -->
+			<header id="header">
 
-        // Set some date in the past. In this case, it's always been since Jan 1
-        var pastDate  = new Date(currentDate.getFullYear(), 0, 1);
+				<!-- Logo -->
+					<h1 id="logo">NLTC 2015</h1>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro">Intro</a></li>
+							<li><a href="#one">Where Is It</a></li>
+							<li><a href="#two">What Will I Do</a></li>
+							<li><a href="#three">How Do I Go</a></li>
+							<li><a href="#remind">Remind Me</a></li>
+						</ul>
+					</nav>
 
-        // Calculate the difference in seconds between the future and current date
-        var diff = currentDate.getTime() / 1000 - pastDate.getTime() / 1000;
+			</header>
+			
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content container small">
+					<header>
+						<h2>Hey.</h2>
+					</header>
+					<p>Ready for <strong>2015 NLTC</strong>?</p>
+					<p>Quote</p>
+					<footer>
+						<a href="#one" class="button style2 down">More</a>
+					</footer>
+				</div>
+			</section>
+		
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Where Is It</h2>
+					</header>
+					<p>Beautiful Birmingham, Alabama</p>
+					<p>How is it beautiful?</p>
+				</div>
+				<a href="#two" class="button style2 down anchored">Next</a>
+			</section>
+		
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>What Will I Do</h2>
+					</header>
+					<p>Lots of stuff</p>
+					<ul>
+						<li>Workshops</li>
+						<li>Training</li>
+						<li>Socializing</li>
+					</ul>
+				</div>
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>
+			
+		<!-- Work -->
+			<section id="three" class="main style3 primary">
+				<div class="content container">
+					<header>
+						<h2>How Do I Go</h2>
+						<p>Enter email below and we will remind you to register</p>
+						<p>You will reserve a room at the hotel and book your own flight or drive</p>
+						<p>Or something else entirely?</p>
+					</header>
+					
+					<!-- Lightbox Gallery  -->
+						<div class="container small gallery">
+							<div class="row flush images">
+								<div class="6u"><a href="images/fulls/01.jpg" class="image fit from-left"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a></div>
+								<div class="6u"><a href="images/fulls/02.jpg" class="image fit from-right"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a></div>
+							</div>
+							
+						</div>
 
-        // Instantiate a coutdown FlipClock
-        clock = $('.clock').FlipClock(diff, {
-          clockFace: 'DailyCounter',
-          showSeconds: false
-        });
-      });
-    </script>
-  </body>
+				</div>
+			</section>
+			
+		<!-- Contact -->
+			<section id="remind" class="main style3 secondary">
+				<div class="content container">
+					<header>
+						<h2>Please Remind Me.</h2>
+						<p>Enter email below and we will send announcements and reminders when registration opens.</p>
+					</header>
+					<div class="box container small">
+					
+					<!-- Contact Form -->
+							<form method="post" action="#">
+								<div class="row half">
+									<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u"><input type="email" name="email" placeholder="Email" /></div>
+								</div>
+								
+								<div class="row">
+									<div class="12u">
+										<ul class="actions">
+											<li><input type="submit" value="Remind Me Please" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+
+					</div>
+				</div>
+			</section>
+			
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Icons -->
+					<ul class="actions">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; National Association of the Deaf</li><li>8630 Fenton St | Suite 820| Silver Spring, MD 20919</li>
+					</ul>
+			
+			</footer>
+
+	</body>
 </html>
