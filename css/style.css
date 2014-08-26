@@ -713,13 +713,39 @@
 /*********************************************************************************/
 
 	#intro {
-		background: url('images/overlay.png'), url('../images/nltc-main-pic.jpg');
+		/*background: url('images/overlay.png'), url('../images/nltc-main-pic.jpg');
+		*/
+		background: url('images/overlay.png');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
 	}
+	.overlay-text {
+		position: absolute;
+		top: 0;
+	}
+	.video-wrapper {
+		position: relative;
+	}
 
+	.overlay-text  {
+		text-align: center;
+		padding-top: 50px;
+	}
+
+	.overlay-text h2 {
+		font-size: 8em;
+		text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+	}
+	.overlay-text p {
+		font-size: 2.4em;
+		text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+	}
+	.overlay-text footer {
+		padding-top: 50px;
+		text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+	}
 /*********************************************************************************/
 /* One                                                                           */
 /*********************************************************************************/
