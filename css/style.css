@@ -501,9 +501,10 @@
 			}
 			
 				.main.style1 h2 {
-					font-size: 4.25em;
+					font-size: 2em;
 					line-height: 1em;
-					letter-spacing: -4px;
+					letter-spacing: 2px;
+					text-shadow: 1px 2px 3px #000;
 				}
 				
 				.main.style1 .content {
@@ -713,17 +714,14 @@
 /*********************************************************************************/
 
 	#intro {
-		/*background: url('images/overlay.png'), url('../images/nltc-main-pic.jpg');
-		*/
-		background: url('images/overlay.png');
+		background: url('images/overlay.png'), url('../images/top-background.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
 	}
 	.overlay-text {
-		position: absolute;
-		top: 0;
+		
 	}
 	.video-wrapper {
 		position: relative;
@@ -735,23 +733,20 @@
 	}
 
 	.overlay-text h2 {
-		font-size: 8em;
-		text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+		
 	}
 	.overlay-text p {
-		font-size: 2.4em;
+		font-size: 1.2em;
 		text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
 	}
 	.overlay-text footer {
-		padding-top: 50px;
-		text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
 	}
 /*********************************************************************************/
 /* One                                                                           */
 /*********************************************************************************/
 
 	#one {
-		background: url('images/overlay.png'), url('../images/fulls/birmingham.jpg');
+		background: url('images/overlay.png'), url('../images/fulls/what-would-i-do.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -762,7 +757,7 @@
 /*********************************************************************************/
 
 	#two {
-		background: url('images/overlay.png'), url('../images/fulls/what-would-i-do.jpg');
+		background: url('images/overlay.png'), url('../images/fulls/birmingham.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;

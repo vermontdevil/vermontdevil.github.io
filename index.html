@@ -13,6 +13,7 @@
 		<script src="js/jquery.scrollgress.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="js/vendor/signup.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -33,9 +34,8 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro">Intro</a></li>
-							<li><a href="#one">Where Is It</a></li>
-							<li><a href="#two">What Will I Do</a></li>
-							<li><a href="#three">How Do I Go</a></li>
+							<li><a href="#one">What</a></li>
+							<li><a href="#two">Where</a></li>
 							<li><a href="#remind">Remind Me</a></li>
 						</ul>
 					</nav>
@@ -43,21 +43,19 @@
 			</header>
 			
 		<!-- Intro -->
-			<!--<section id="intro" class="main style1 dark fullscreen">-->
-			<section id="intro" class="dark">
-				<!--
-				<div class="content container small">
+			<section id="intro" class="main style1 dark fullscreen">
+			
+				<div class="content container small overlay-text">
 					<header>
-						<h2>Hey.</h2>
+						<h2>NAD Leadership Training Conference (NLTC)</h2>
 					</header>
-					<p>Ready for <strong>2015 NLTC</strong>?</p>
-					<p>September 24 &ndash; 26, 2015</p>
+					<p><strong>SAVE THE DATE:</strong> September 24 &ndash; 26, 2015</p>
 					<footer>
 						<a href="#one" class="button style2 down">More</a>
 					</footer>
 				</div>
-				-->
-				<div class="video-wrapper">
+				<!--
+				<div id="home" class="main">
 					<video class="prpl-bgv prpl-cover-bgv" id="bgv_AkwPO8" poster="img/video-posters/intro.jpg" preload="auto" loop="true" muted="true" autoplay="" style="width: 100%; height: auto;">
 						<source src="video/freewaterfalls.webm" type="video/webm">
 						<source src="video/freewaterfalls.m4v" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
@@ -72,18 +70,16 @@
 							<a href="#one" class="button style2 down">More</a>
 						</footer>
 					</div>
-				</div>
+				</div>-->
 			</section>
 		
 		<!-- One -->
 			<section id="one" class="main style2 right dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>Where Is It</h2>
+						<h2>WHAT:</h2>
 					</header>
-					<p>Beautiful Birmingham, Alabama</p>
-					<p>September 24 &ndash; 26, 2015</p>
-					<p>How is it beautiful?</p>
+					<p>NLTC will foster the enhanced development of leadership within state associations, entities, and corporations through workshops/trainings/and break-out sessions.</p>
 				</div>
 				<a href="#two" class="button style2 down anchored">Next</a>
 			</section>
@@ -92,27 +88,20 @@
 			<section id="two" class="main style2 left dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>What Will I Do</h2>
+						<h2>WHERE:</h2>
 					</header>
-					<p>Lots of stuff</p>
-					<ul>
-						<li>Workshops</li>
-						<li>Training</li>
-						<li>Socializing</li>
-					</ul>
-					<p>All this from September 24 to September 26, 2015</p>
+					<p> Sheraton Birmingham Hotel<br>Birmingham, Alabama</p>
 				</div>
-				<a href="#three" class="button style2 down anchored">Next</a>
+				<a href="#remind" class="button style2 down anchored">Next</a>
 			</section>
 			
 		<!-- Work -->
-			<section id="three" class="main style3 primary">
+			<section id="three" class="main style3 primary" style="display:none;">
 				<div class="content container">
 					<header>
-						<h2>How Do I Go</h2>
-						<p>Enter email below and we will remind you to register</p>
-						<p>You will reserve a room at the hotel and book your own flight or drive</p>
-						<p>Or something else entirely?</p>
+						<h2>YES: I'd like to go!</h2>
+						<p>Please let me know when registration and further details are available!</p>
+						
 					</header>
 					
 					<!-- Lightbox Gallery  -->
@@ -131,13 +120,15 @@
 			<section id="remind" class="main style3 secondary">
 				<div class="content container">
 					<header>
-						<h2>Please Remind Me.</h2>
-						<p>Enter email below and we will send announcements and reminders when registration opens.</p>
+						<h2>YES: I'd like to go!</h2>
+						<p>Please let me know when registration and further details are available!</p>
 					</header>
 					<div class="box container small">
 					
 					<!-- Contact Form -->
-							<form method="post" action="#">
+							<!--http://104.131.107.39/externalsignups/signups.php-->
+							<form action="#" method="POST" accept-charset="utf-8" name="signup-form" id="signup-form">
+			
 								<div class="row half">
 									<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
 									<div class="6u"><input type="email" name="email" placeholder="Email" /></div>
@@ -146,8 +137,13 @@
 								<div class="row">
 									<div class="12u">
 										<ul class="actions">
-											<li><input type="submit" value="Remind Me Please" /></li>
+											<li><input type="submit" value="Remind Me Please" id="submit-btn" /></li>
 										</ul>
+									</div>
+								</div>
+								<div class="row">
+									<div class="12u">
+										<p id="status"></p>
 									</div>
 								</div>
 							</form>
