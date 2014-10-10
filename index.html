@@ -1,184 +1,199 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>#NAD2016</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/vendor/modernizr.js"></script>
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>        
-	<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 
-	<!-- Media queries -->
-	<!--[if lt IE 9]>
-		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-	<![endif]-->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Scrolling Nav - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-    <div class="home" id="home">
-        <nav class="top-bar" id="nav" data-topbar>
-            <section class="top-bar-section">
-            <ul class="right">
-                <li><a href="#home" data-menu-index="home">HOME</a></li>
-                <li><a href="#page1" data-menu-index="page1">WHAT</a></li>
-                <li><a href="#page2" data-menu-index="page2">WHERE</a></li>
-                <li><a href="#page3" data-menu-index="page3">REMIND ME</a></li>
-            </ul>
-            </section>
-        </nav>
-        
-        <div class="row">
-            <div class="large-6 columns">
-                <h2>Biennial NAD Conference</h2>
-                <h3>July 5 &ndash; 9, 2016</h3>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">National Association of the Deaf</a>
             </div>
-            <div class="large-6 columns logo">
-                <p><img src="img/nad-logo.png" alt=""></p>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">What</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Where</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Remind Me</a>
+                    </li>
+                </ul>
             </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div class="row nav-buttons">
-            <div class="large-12 columns home-buttons">
-                <a role="button" href="#page2" class="button">WHERE</a>
-                <a role="button" href="#page3" class="button">REMIND ME</a>
-            </div>
-        </div>
-    </div>
-    <div class="main">
-        <section class="page1 page-section" id="page1">
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
             <div class="row">
-                <div class="large-6 columns">
+                <div class="col-lg-6">
+                     <h2>Biennial NAD Conference</h2>
+                    <h3>July 5 &ndash; 9, 2016</h3>
+                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+                </div>
+                <div class="col-lg-6">
+                    <p><img src="img/nad-logo.png" alt=""></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
                     <p>The 53rd Biennial NAD Conference will have Council of Representatives, Awards, workshops, NAD@Night events, and a kids camp! Workshop tracks will be announced in 2015</p>
                 </div>
-                <div class="large-6 columns">
-                    <div style='position: relative; padding-bottom: 51%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=75&size=big&setId=72157645843371602&thumbnails=0&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' ></iframe></div>
+                <div class="col-lg-6">
+                    <div style='position: relative; padding-bottom: 66%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=65&size=big&count=50&setId=72157645843371602&thumbnails=0&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' ></iframe></div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="page2 page-section" id="page2">
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
             <div class="row">
-                <div class="large-6 columns">
+                <div class="col-lg-6">
                     <h1>Renaissance Phoenix Downtown</h1>
                     <img src="img/phoenix-hotel.jpg" alt="Picture of Renissance Phoenix Hotel">
                 </div>
-                <div class="large-6 columns">
+                <div class="col-lg-6">
                     <iframe width="400" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Renaissance%20Phoenix%20Downtown%20Hotel%2C%20East%20Adams%20Street%2C%20Phoenix%2C%20Ariz%2C%20United%20States&key=AIzaSyC_50-Ky2MusCvxQ9O3t6edDbe_QmuqlCs"></iframe>
                 </div>
             </div>
-        </section>
-        <section class="page3 page-section" id="page3">
-            <div class="row">
-                <div class="large-12 columns">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row form-row">
+                <div class="col-lg-6">
+                    <h3>"YES! I'm a potential Sponsor"</h3>
+                    <p>Email me when the Sponsor Package is ready."</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group input-group-lg">
+                    <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
+                    <span class="input-group-btn">
+                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">Subscribe!</button>
+                    </span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row form-row">
+                <div class="col-lg-6">
+                    <h3>"YES! I'm an exhibitor"</h3>
+                    <p>Email me when the exhibitor registration is ready.</p>
+                </div>
+                <div class="col-lg-6">
                     <div class="row">
-                        <div class="large-6 columns">
-                            <h3>"YES! I'm a potential Sponsor"</h3>
-                            <p>Email me when the Sponsor Package is ready."</p>
-                        </div>
-                        <div class="large-6 columns">
-                            <form class="email-form">
-                                <div class="row">
-                                    <div class="large-12 columns">
-                                        <div class="row collapse">
-                                            <div class="small-10 columns">
-                                              <input type="text" placeholder="Your Email Address">
-                                            </div>
-                                            <div class="small-2 columns">
-                                              <a href="#" class="button postfix">Email Me</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                        <div class="col-lg-12">
+                            <div class="input-group input-group-lg">
+                            <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
+                            <span class="input-group-btn">
+                                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">Subscribe!</button>
+                            </span>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="large-6 columns">
-                            <h3>"YES! I'm an exhibitor"</h3>
-                            <p>Email me when the exhibitor registration is ready.</p>
-                        </div>
-                        <div class="large-6 columns">
-                            <form class="email-form">
-                                <div class="row">
-                                    <div class="large-12 columns">
-                                        <div class="row collapse">
-                                            <div class="small-10 columns">
-                                              <input type="text" placeholder="Your Email Address">
-                                            </div>
-                                            <div class="small-2 columns">
-                                              <a href="#" class="button postfix">Email Me</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="large-12 columns">
-                                        <p>Rates: $700 for non-profit, $875 for deaf-owned, and $1200 for for-profit.</p>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="large-6 columns">
-                            <h3>"YES! I'm an advertiser"</h3>
-                            <p>Email me when the advertiser registration is ready."</p>
-                        </div>
-                        <div class="large-6 columns">
-                            <form class="email-form">
-                                <div class="row">
-                                    <div class="large-12 columns">
-                                        <div class="row collapse">
-                                            <div class="small-10 columns">
-                                              <input type="text" placeholder="Your Email Address">
-                                            </div>
-                                            <div class="small-2 columns">
-                                              <a href="#" class="button postfix">Email Me</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="large-6 columns">
-                            <h3>"YES! I'm going"</h3>
-                            <p>Email me when the general registration is ready."</p>
-                        </div>
-                        <div class="large-6 columns">
-                            <form class="email-form">
-                                <div class="row">
-                                    <div class="large-12 columns">
-                                        <div class="row collapse">
-                                            <div class="small-10 columns">
-                                              <input type="text" placeholder="Your Email Address">
-                                            </div>
-                                            <div class="small-2 columns">
-                                              <a href="#" class="button postfix">Email Me</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                        <div class="col-lg-12">
+                            <p>Rates: $700 for non-profit, $875 for deaf-owned, and $1200 for for-profit.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/vendor/jquery-nav.js"></script>
-    <script src="js/vendor/jquery-scrollTo.min.js"></script>
-    <script>
-        $(document).foundation();
-        $(document).ready(function(){
-            $('nav').onePageNav();
-            $('.nav-buttons').onePageNav();
-        });
-    </script>
-  </body>
+            <div class="row form-row">
+                <div class="col-lg-6">
+                    <h3>"YES! I'm a potential Sponsor"</h3>
+                    <p>Email me when the Sponsor Package is ready."</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group input-group-lg">
+                    <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
+                    <span class="input-group-btn">
+                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">Subscribe!</button>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-row">
+                <div class="col-lg-6">
+                    <h3>"YES! I'm going"</h3>
+                    <p>Email me when the general registration is ready."</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group input-group-lg">
+                    <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
+                    <span class="input-group-btn">
+                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">Subscribe!</button>
+                    </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
 </html>
