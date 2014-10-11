@@ -243,6 +243,35 @@ a.pure-button-primary {
     background: #111;
 }
 
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    display: inline-block;
+}
+
+.footer ul li a {
+    color: rgba(185,186,187,0.5);
+    font-size: 1.2em;
+    padding: 0.5em;
+    text-decoration: none;
+}
+.icon::before {
+display: inline-block;
+font-family: FontAwesome;
+font-size: 1.25em;
+text-decoration: none;
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+}
+
+.icon > .label {
+			display: none;
+		}
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some
