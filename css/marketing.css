@@ -23,7 +23,9 @@ h6,
 label {
     color: #34495e;
 }
-
+select {
+    margin: 1em 0 !important;
+}
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -277,6 +279,15 @@ a.pure-button-primary {
     .l-box-lrg {
         border: none;
     }
+    
+    /* for menus */
+    .pure-menu-responsive-toggle {
+        display: none  !important;
+    }
+    
+    .pure-menu-responsive .pure-menu-list {
+        display: inline-block;
+    }
 
 }
 
@@ -290,4 +301,17 @@ a.pure-button-primary {
     .splash-head {
         font-size: 300%;
     }
+}
+
+/* on small screen */
+@media screen and (max-width: 47.5em) {
+    .content-head {
+        font-size: 1em;
+    }
+    .splash-head {
+        font-size: 1.3em;
+    }
+    
+    #hometopsy {display: none !important;}
+    .pure-menu-heading {font-size: 1em !important;}
 }
