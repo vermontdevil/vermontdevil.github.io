@@ -127,7 +127,14 @@ a.pure-button-primary {
     color: #AECFE5;
 }
 
-
+.logo {
+    width: 38px;
+    height: 38px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+}
 /*
  * -- SPLASH STYLES --
  * This is the blue top section that appears on the page.
@@ -159,16 +166,18 @@ a.pure-button-primary {
 }
 
 /* This is the main heading that appears on the blue section */
-.splash-head {background-image: url('../img/overlay.png');
+.splash-head {
+    background-image: url('../img/overlay-reddish.png');
     background-size: 50% 80%;
     font-size: 1.5;
     font-weight: bold;
     color: white;
-    border: 3px solid white;
     padding: 1em 1.6em;
-    font-weight: 100;
+    font-weight: 500;
+    border: 1px solid white;
     border-radius: 5px;
     line-height: 1em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,1);
 }
 
 /* This is the subheading that appears on the blue section */
@@ -207,6 +216,7 @@ a.pure-button-primary {
 /* This is a modifier class used when the content-head is inside a ribbon */
 .content-head-ribbon {
     color: white;
+    text-align: center;
 }
 
 /* This is the class used for the content sub-headers (<h3>) */
@@ -268,6 +278,7 @@ a.pure-button-primary {
     .splash {
         width: 50%;
         height: 50%;
+        
     }
 
     .splash-head {
@@ -299,7 +310,7 @@ a.pure-button-primary {
 @media (min-width: 78em) {
     /* We increase the header font size even more */
     .splash-head {
-        font-size: 300%;
+        font-size: 200%;
     }
 }
 
@@ -309,7 +320,9 @@ a.pure-button-primary {
         font-size: 1em;
     }
     .splash-head {
-        font-size: 1.3em;
+        font-size: 2em;
+        width: 250px;
+        height: 200px;
     }
     
     #hometopsy {display: none !important;}
