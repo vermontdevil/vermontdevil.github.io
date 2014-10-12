@@ -283,7 +283,7 @@ line-height: 1;
 and (min-width : 321px) {
 /* Styles */
     .splash-container {
-        background: transparent url('../img/nad-321x480.jpg') 0 0 no-repeat fixed;
+        background: none;
     }
 }
 /* small tablet */
@@ -292,7 +292,7 @@ and (min-width : 481px)
     and (max-width: 567px)
  { 
     .splash-container {
-        background: transparent url('../img/nad-481x768.jpg') 0 0 no-repeat fixed;
+        background: none;
     }
 }
 
@@ -316,7 +316,7 @@ and (max-width : 320px) {
     }
     
     .splash-container {
-        background: transparent url('../img/nad-320x480.jpg') 0 0 no-repeat fixed;
+        background: none;
     }
     
     #hometopsy {display: none !important;}
