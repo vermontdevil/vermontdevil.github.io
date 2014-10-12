@@ -141,7 +141,7 @@ a.pure-button-primary {
  */
 
 .splash-container {
-     background: transparent url('../img/nad-2016-768px-header.jpg') 0 0 no-repeat fixed;
+    
     background-size: cover;
     z-index: 1;
     overflow: hidden;
@@ -277,6 +277,52 @@ line-height: 1;
  * On tablets and other medium-sized devices, we want to customize some
  * of the mobile styles.
  */
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+    .splash-container {
+        background: transparent url('../img/nad-321x480.jpg') 0 0 no-repeat fixed;
+    }
+}
+/* small tablet */
+@media only screen
+and (min-width : 481px)
+    and (max-width: 567px)
+ { 
+    .splash-container {
+        background: transparent url('../img/nad-481x768.jpg') 0 0 no-repeat fixed;
+    }
+}
+
+@media only screen
+and (min-width : 1024px) {
+.splash-container {
+        background: transparent url('../img/nad-1024x768.jpg') 0 0 no-repeat fixed;
+    }
+}
+/* on small screen 
+@media screen and (max-width: 47.5em) {*/
+@media only screen 
+and (max-width : 320px) {
+    .content-head {
+        font-size: 1em;
+    }
+    .splash-head {
+        font-size: 2em;
+        width: 250px;
+        height: 200px;
+    }
+    
+    .splash-container {
+        background: transparent url('../img/nad-320x480.jpg') 0 0 no-repeat fixed;
+    }
+    
+    #hometopsy {display: none !important;}
+    .pure-menu-heading {font-size: 1em !important;}
+}
+
 @media (min-width: 48em) {
 
     /* We increase the body font size */
@@ -313,7 +359,10 @@ line-height: 1;
     .splash-head {
         font-size: 250%;
     }
-
+    
+    .splash-container {
+        background: transparent url('../img/nad-769x1024.jpg') 0 0 no-repeat fixed;
+    }
 
     /* We remove the border-separator assigned to .l-box-lrg */
     .l-box-lrg {
@@ -331,6 +380,15 @@ line-height: 1;
 
 }
 
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+    .splash-container {
+        background: transparent url('../img/nad-2016-header.jpg') 0 0 no-repeat fixed;
+    }
+}
+
 /*
  * -- DESKTOP (AND UP) MEDIA QUERIES --
  * On desktops and other large devices, we want to over-ride some
@@ -341,19 +399,8 @@ line-height: 1;
     .splash-head {
         font-size: 200%;
     }
-}
-
-/* on small screen */
-@media screen and (max-width: 47.5em) {
-    .content-head {
-        font-size: 1em;
-    }
-    .splash-head {
-        font-size: 2em;
-        width: 250px;
-        height: 200px;
-    }
     
-    #hometopsy {display: none !important;}
-    .pure-menu-heading {font-size: 1em !important;}
+    .splash-container {
+        background: transparent url('../img/nad-2016-header.jpg') 0 0 no-repeat fixed;
+    }
 }
